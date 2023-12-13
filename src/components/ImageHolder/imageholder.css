@@ -1,0 +1,27 @@
+.imageHolder__container{
+    animation: fadeInAnimation 1.5s ease-in-out forwards;
+}
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .imageHolder__container:hover .imageHolder__topInfo{
+    transition: opacity 0.5s ease-in;
+    opacity: 0;
+    font-weight: bold;
+}
+
+.imageHolder__container:hover .imageHolder__topInfo--details{
+    transition: opacity 0.5s ease-out;
+    opacity: 80%;
+    display: flex;
+}
+
+
+
