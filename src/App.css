@@ -1,4 +1,31 @@
-*{
+* {
   margin: 0;
   padding: 0;
+
+  /* problem with vision */
+  /* filter: blur(1px);  */
+  /* test the contrast */
+  /* filter: grayscale(); */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app__loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app__loading h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 16px;
 }

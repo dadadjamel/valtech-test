@@ -8,9 +8,9 @@ function App() {
 
   if (isLoading) {
     return (
-      <div className="flex flex-col justify-center items-center min-h-screen">
+      <div className="app__loading">
         <CircularProgress />
-        <h1 className="text-3xl font-semibold mt-4">Loading...please wait</h1>
+        <h1>Loading...please wait</h1>
       </div>
     );
   }
@@ -20,7 +20,7 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen">
+    <div className="app">
       <GalleryImages countries={countries ?? []} />
     </div>
   );
